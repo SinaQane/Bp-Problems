@@ -50,7 +50,7 @@ public class Main {
                 f2 = false;
             }
             
-            if ((f1 && !f2) || (!f1 && f2)) { // If sum is prime but i isn't or if i is prime and sum isn't, we add one to the counter.
+            if ((f1 && !f2) || (!f1 && f2)) { // If sum is prime and i isn't or if i is prime and sum isn't, we add one to the counter.
                 counter++;
             }
         }
