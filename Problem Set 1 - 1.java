@@ -19,7 +19,7 @@ public class Main {
 
         for (int i = 0; i < number_of_moves; i++) {
             if (String.valueOf(moves.charAt(i)).equals("U")) {
-                if (!(x % 2 == 0 && y % 3 == 2)) { // We mustn't hit x = 2*s and y = 3*t squares. So in x = 2*s and y = 3*t-1 squares, we mustn't move Up.
+                if (!(x % 2 == 0 && y % 3 == 2)) { // We mustn't hit x = 2*s and y = 3*t squares. So in x = 2*s and y = 3*t - 1 squares, we mustn't move Up.
                     if (y != n) { // We mustn't go out of the table
                         y += 1;
                     }
@@ -31,7 +31,7 @@ public class Main {
                     }
                 }
             } else if (String.valueOf(moves.charAt(i)).equals("D")) {
-                if (!(x % 2 == 0 && y % 3 == 1)) { // We mustn't hit x = 2*s and y = 3*t squares. So in x = 2*s and y = 3*t+1 squares, we mustn't move down.
+                if (!(x % 2 == 0 && y % 3 == 1)) { // We mustn't hit x = 2*s and y = 3*t squares. So in x = 2*s and y = 3*t + 1 squares, we mustn't move down.
                     if (y != 1) { // We mustn't go out of the table
                         y -= 1;
                     }
